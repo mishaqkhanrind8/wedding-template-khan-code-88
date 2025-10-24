@@ -7,8 +7,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #444;
-    background-color: #f5f5f5;
+    background-color: #ffdddd80;
     line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1.stylish, h2.stylish, h3.stylish {
@@ -70,4 +72,432 @@ footer {
     position: relative;
     bottom: 45px;
     width: 100%;
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-section .hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hero-section .hero-title {
+    font-size: 55px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #333;
+}
+
+.hero-section .hero-subtitle {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.hero-section .hero-date {
+    font-size: 23px;
+    margin-bottom: 30px;
+    color: #777;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h2, div h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.info-section {
+   max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.info-text {
+    line-height: 1.8;
+    color: #555;
+    margin-top: 15px;
+}
+
+.info-section img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+}
+
+.btn-section {
+    text-align: center;
+    margin-top: 30px;
+}
+.btn-section .Wedding-details {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-section .Wedding-details:hover {
+    background-color: #555;
+}
+
+div.card {
+  position: relative;
+  width: 100%;
+  height: 450px;
+}
+
+div.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+div.card .caption {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 55px;
+}
+
+div.card .sub-caption {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 24px;
+}
+
+.wedding-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.flex-container {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: stretch;
+}
+
+.flex-item {
+  text-align: center;
+    flex: 1 1 300px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.wedding-details img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    margin-bottom: 15px;
+}
+
+.rsvp-section {
+    background-color: #ffdddd;
+    padding: 60px 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.rsvp-title {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.rsvp-subtitle {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.respond-by {
+    margin-bottom: 30px;
+    color: #fff;
+    background-color: #f44336;
+    padding: 20px 32px;
+   font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.respond-by:hover {
+    background-color: #d32f2f;
+}
+
+.modal {
+
+    position: fixed;
+    z-index: 1001;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 600px;
+    height: 330px;
+    box-shadow: 0 4px 12px #00000033;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.modal-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-container h2 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 4px;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.modal-container p {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+.submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    width: 50%;
+}
+
+.un-submit {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+    width: 50%;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p a {
+    color: #ff6666;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+
+  body {
+    padding: 0 10px;
+  }
+
+  .hero-section {
+    height: 350px;
+    padding: 20px 10px;
+  }
+
+  .hero-section .hero-title {
+    font-size: 34px;
+    letter-spacing: 2px;
+  }
+
+  .hero-section .hero-subtitle {
+    font-size: 20px;
+  }
+
+  .hero-section .hero-date {
+    font-size: 18px;
+  }
+
+  section {
+    padding: 40px 10px;
+  }
+
+  section h2, div h2 {
+    font-size: 26px;
+  }
+
+  section h3 {
+    font-size: 22px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex-item {
+    flex: 1 1 100%;
+    padding: 15px;
+  }
+
+  .wedding-details img {
+    width: 100%;
+  }
+
+  .rsvp-section {
+    padding: 40px 15px;
+  }
+
+  .respond-by {
+    width: 100%;
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+
+  .modal {
+    width: 95%;
+    height: auto;
+    padding: 15px;
+  }
+
+  .modal-container h2 {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  form input[type="text"] {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .submit,
+  .un-submit {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  nav ul li a {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 14px;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 430px) {
+
+  .modal {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto; /* scroll if content is long */
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .modal-container h2 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+
+  div.card {
+    height: 300px; /* image height thoda kam */
+  }
+
+  div.card .caption {
+    top: 40%;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    width: 90%;
+  }
+
+  div.card .sub-caption {
+    top: 58%;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 90%;
+  }
+
+  /* 🔹 Footer reposition if needed */
+  footer {
+    position: relative; /* prevent overlap with fixed nav */
+    bottom: auto;
+    padding-bottom: 60px; /* spacing above nav */
+  }
 }

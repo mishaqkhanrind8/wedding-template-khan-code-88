@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="A beautiful wedding template to announce your special day.">
     <title>Wedding Template</title>
+    <meta name="author" content="Muhammad Ishaq">
+    <meta name="keywords" content="wedding, template, HTML, CSS">
 
+     <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,7 +24,7 @@
   </nav>
 
     <section class="hero-section" id="home">
-        <img src="assets/logo.webp" alt="Wedding Logo" width="100%" height="auto" loading="lazy">
+        <img class="hero-img" src="assets/logo.webp" alt="Wedding Logo" width="100%" height="auto" loading="lazy">
 
         <div class="container">
             <h1 class="hero-title stylish">
@@ -35,7 +40,7 @@
     About Jane &amp; John
   </h2>
   <img src="assets/jane-john.webp" alt="Jane & John" width="100%" height="auto" loading="lazy">
-  <p>
+  <p class="info-text">
     Jane and John met in college and have been inseparable ever since. They share a love for adventure, music,
      and spending time with family and friends. Their journey together has been filled with laughter, support,
       and countless memories. They are excited to start this new chapter of their lives together. Lorem ipsum
@@ -43,7 +48,7 @@
         sint laboriosam! Animi harum vel accusamus possimus dolore.
   </p>
 
-<div class="button-section">
+<div class="btn-section">
     <a href="" class="Wedding-details">Wedding Details</a>
 </div>
 
@@ -52,10 +57,10 @@
 <div class="card">
     <img src="assets/wedding-venue.webp" alt="Wedding Venue" width="100%" height="auto" loading="lazy">
     <div class="card-content">
-        <h2>
+        <h2 class="caption">
             You Are Invited
         </h2>
-        <h3>
+        <h3 class="sub-caption">
             off course you are!
         </h3>
     </div>
@@ -65,7 +70,7 @@
 <h2>
     THE WEDDING
 </h2>
-<img src="wedding-ceremony.jpg" alt="Wedding Ceremony" width="100%" height="auto" loading="lazy">
+<img src="assets/wedding-ceremony.webp" alt="Wedding Ceremony" width="100%" height="auto" loading="lazy">
 
 <div class="flex-container">
     <div class="flex-item">
@@ -94,15 +99,15 @@
 
 <section class="rsvp-section" id="rsvp">
 
-    <h2>
+    <h2 class="rsvp-title">
         HOPE YOU CAN MAKE IT!
     </h2>
 
-    <h3>
+    <h3 class="rsvp-subtitle">
         Kindly Respond By October 25th, 2025
     </h3>
 
-    <button id="Respond">RSVP Now</button>
+    <button class="respond-by" id="respond-by">RSVP Now</button>
     </section>
 
     <div class="modal">
@@ -116,8 +121,10 @@
             <form action="">
             <input type="text" placeholder="Name(s)" required>
             <p>Sincerely, John & Jane</p>
-            <input type="submit" value="Come">
-            <input type="submit" value="Can't come">   
+           <div class="button-group">
+    <button class="close-modal submit" type="submit">Come</button>
+    <button type="button" class="close-modal un-submit">Can't come</button>
+  </div>
            </form>
     
         </div>

@@ -234,6 +234,12 @@ div.card .sub-caption {
     border-radius: 8px;
 }
 
+.flex-item p {
+    margin-top: 10px;
+    color: #555;
+    line-height: 1.6;
+}
+
 .wedding-details img {
     width: 100%;
     height: auto;
@@ -252,10 +258,15 @@ div.card .sub-caption {
 
 .rsvp-title {
     margin-bottom: 20px;
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 300;
     color: #333;
 }
 
 .rsvp-subtitle {
+   font-size: 20px;
+   font-weight: 400;
     margin-bottom: 20px;
     color: #333;
 }
@@ -263,7 +274,7 @@ div.card .sub-caption {
 .respond-by {
     margin-bottom: 30px;
     color: #fff;
-    background-color: #f44336;
+    background-color: rgba(244, 67, 54, 0.8);
     padding: 20px 32px;
    font-size: 20px;
     border: none;
@@ -273,7 +284,7 @@ div.card .sub-caption {
 }
 
 .respond-by:hover {
-    background-color: #d32f2f;
+    background-color: rgba(211, 47, 47, 0.8);
 }
 
 .modal {
